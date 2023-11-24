@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@200&family=Roboto:wght@300&display=swap");
+
+:root {
+  --main-color: #deab5f;
+  --primary-color: #312e2e;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 30px;
+  background: var(--main-color);
+  border: none;
+  cursor: pointer;
+}
+
+body {
+  background-color: #100e0f;
+}
+
