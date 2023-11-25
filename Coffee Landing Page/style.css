@@ -112,6 +112,7 @@ li a:hover {
 .title-style {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .title {
@@ -163,22 +164,21 @@ li a:hover {
 /* Products */
 .products {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .title-three {
   font-size: 4rem;
   color: #fff;
   font-family: "Playfair Display", serif;
-
-  transform: translateX(100px) translateY(50px);
 }
 .cards {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
-  transform: translateY(200px);
 }
 .card {
   border: 2px solid var(--main-color);
@@ -275,7 +275,7 @@ hr {
   margin-left: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .main-headings,
   .primary-heading {
     font-size: 2.5rem;
@@ -313,10 +313,6 @@ hr {
     font-size: 2em;
   }
 
-  .title-three {
-    transform: translateX(100px) translateY();
-  }
-
   .card {
     height: 300px;
     width: 200px;
@@ -330,5 +326,58 @@ hr {
   footer .containers {
     align-items: start;
     height: 50vh;
+  }
+}
+@media screen and (max-width: 767px) {
+  li a {
+    margin-left: 20px;
+  }
+  .main-headings,
+  .primary-heading {
+    font-size: 2rem;
+  }
+  .main-headings {
+    top: 15rem;
+  }
+  .primary-heading {
+    bottom: 10rem;
+  }
+  .main-btn {
+    bottom: 6rem;
+  }
+  .img-2 {
+    margin: 0 auto;
+    height: 250px;
+    width: 250px;
+  }
+  #our-story {
+    text-align: center;
+  }
+  .section-content p {
+    padding: 0 20px 0 20px;
+  }
+  .content-section {
+    text-align: center;
+  }
+  .content-section p {
+    padding: 0 20px 0 20px;
+  }
+  .products {
+  }
+  .title-three {
+    font-size: 3rem;
+  }
+  .cards {
+  }
+  .card {
+    width: 200px;
+    height: 250px;
+    margin-bottom: 5rem;
+  }
+  footer .containers {
+    align-items: start;
+    height: 75vh;
+  }
+  .secondary-btn {
   }
 }
