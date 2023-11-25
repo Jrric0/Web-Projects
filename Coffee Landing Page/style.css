@@ -362,13 +362,11 @@ hr {
   .content-section p {
     padding: 0 20px 0 20px;
   }
-  .products {
-  }
+
   .title-three {
     font-size: 3rem;
   }
-  .cards {
-  }
+
   .card {
     width: 200px;
     height: 250px;
@@ -377,7 +375,5 @@ hr {
   footer .containers {
     align-items: start;
     height: 75vh;
-  }
-  .secondary-btn {
   }
 }
