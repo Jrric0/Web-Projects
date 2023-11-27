@@ -11,9 +11,104 @@
   --base-color-pure-white: #ffffff;
   --base-color-pure-black: #000000;
 }
+/*reset*/
+* {
+  margin: 0;
+  font-family: "Jost", sans-serif;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--font-color-desc-dark);
+}
+body {
+  font-size: 18px;
+}
+h1 {
+  font-size: 1.5em;
+}
+h2 {
+  font-size: 1.3em;
+}
+h3 {
+  font-size: 1.2em;
+}
+h4 {
+  font-size: 1.1em;
+}
+input {
+  font-size: 1.2em;
+}
+/*nav*/
+.site-nav {
+  background: transparent;
+  height: 80px;
+  border-bottom: 1px solid var(--font-color-desc-light);
+  position: absolute;
+}
+.site-nav img {
+  padding-left: 30px;
+  align-self: center;
+}
+.hamburger {
+  background: transparent;
+  border: none;
+  grid-column: 7/8;
+  cursor: pointer;
+}
+.line {
+  width: 20px;
+  height: 2px;
+  background: var(--base-color-pure-white);
+  margin-bottom: 5px;
+  border-radius: 50px;
+}
 
+.site-nav ul {
+  display: none;
+}
+/*header*/
+header {
+  background: url(assets/images/header-image.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
-
+header > h1,
+h4,
+input,
+label,
+.popular-sounds {
+  text-align: center;
+  align-self: center;
+}
+header h1 {
+  color: var(--font-color-title-light);
+  margin-bottom: 15px;
+}
+header h4 {
+  color: var(--font-color-desc-light);
+  margin-bottom: 15px;
+}
+input {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  text-align: start;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
 /*tablets and small desktop*/
 @media screen and (min-width: 768px) {
 }
