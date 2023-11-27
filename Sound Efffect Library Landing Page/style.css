@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@700&family=Playfair+Display:wght@700&family=Poppins:wght@200&family=Roboto:wght@300&display=swap");
+
+:root {
+  --main-color: #cdd6f9;
+  --brand-color-deepblue: #0432df;
+  --brand-color-braveyellow: #f59e00;
+  --font-color-title-dark: #020d37;
+  --font-color-title-light: #eeeeee;
+  --font-color-desc-light: #acafb8;
+  --font-color-desc-dark: #4c526a;
+  --base-color-pure-white: #ffffff;
+  --base-color-pure-black: #000000;
+}
+
+
+
+/*tablets and small desktop*/
+@media screen and (min-width: 768px) {
+}
+
+/*medium to large desktop*/
+@media screen and (min-width: 992px) {
+}
