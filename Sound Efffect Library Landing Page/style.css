@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@700&family=Playfair+Display:wght@700&family=Poppins:wght@200&family=Roboto:wght@300&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,300;0,400;0,700;1,700&family=Playfair+Display:wght@700&family=Poppins:wght@200&family=Roboto:wght@300&display=swap");
 :root {
   --main-color: #cdd6f9;
   --brand-color-deepblue: #0432df;
@@ -41,10 +40,14 @@ h4 {
 input {
   font-size: 1.2em;
 }
+button {
+  cursor: pointer;
+}
 /*nav*/
 .site-nav {
   background: transparent;
   height: 80px;
+  width: 100%;
   border-bottom: 1px solid var(--font-color-desc-light);
   position: absolute;
 }
@@ -56,7 +59,12 @@ input {
   background: transparent;
   border: none;
   grid-column: 7/8;
-  cursor: pointer;
+  height: 50px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .line {
   width: 20px;
@@ -99,12 +107,167 @@ header h4 {
   color: var(--font-color-desc-light);
   margin-bottom: 15px;
 }
+.search-icon {
+  transform: translateY(45px) translateX(10px);
+}
 input {
   width: 100%;
   height: 50px;
   border-radius: 10px;
   text-align: start;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  padding-left: 40px;
+  margin-bottom: 20px;
 }
+
+input:focus-visible {
+  outline: none;
+  border: none;
+}
+.try-keyword {
+  color: var(--font-color-title-light);
+  font-weight: 300;
+}
+
+header div {
+  margin-bottom: 50px;
+}
+.popular-sounds {
+  color: var(--base-color-pure-white);
+  font-weight: 300;
+}
+.popular-sounds a {
+  color: var(--base-color-pure-white);
+  text-decoration: underline;
+}
+
+/*trusted-users*/
+.trusted-users {
+  text-align: center;
+  width: 100%;
+  background: #fafafa;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+.trusted-users h2 {
+  margin-bottom: 50px;
+  color: var(--font-color-title-dark);
+}
+.trusted-user-logos {
+  place-items: center;
+  gap: 40px 0;
+}
+.trusted-user-logos img:nth-child(1) {
+  grid-column: 1/3;
+  grid-row: 1;
+}
+.trusted-user-logos img:nth-child(2) {
+  grid-column: 3/5;
+  grid-row: 1;
+}
+.trusted-user-logos img:nth-child(3) {
+  grid-column: 5/7;
+  grid-row: 1;
+}
+.trusted-user-logos img:nth-child(4) {
+  grid-column: 7/9;
+  grid-row: 1;
+}
+.trusted-user-logos img:nth-child(5) {
+  grid-column: 1/4;
+  grid-row: 2;
+}
+.trusted-user-logos img:nth-child(6) {
+  grid-column: 3/7;
+  grid-row: 2;
+}
+.trusted-user-logos img:nth-child(7) {
+  grid-column: 7/8;
+  grid-row: 2;
+}
+
+/*sound-list-section*/
+.sound-list {
+  padding: 50px 16px;
+}
+
+.sound-list h1 {
+  letter-spacing: 2px;
+}
+table {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+}
+
+.table-heading-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.sound-list ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  align-items: center;
+}
+.sound-list ul li {
+  margin-right: 20px;
+}
+.sound-list ul li:nth-child(1) a {
+  border-bottom: 3px solid var(--font-color-desc-dark);
+  color: var(--font-color-title-dark);
+}
+.sound-list ul li a {
+  font-weight: 500;
+}
+.filter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 600;
+  border-radius: 5px;
+  border: none;
+}
+.filter span {
+  display: none;
+}
+td button {
+  text-align: center;
+  border: none;
+  background: transparent;
+}
+.sound-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.sound-name {
+  color: var(--base-color-pure-black);
+  font-weight: 500;
+}
+.time-length {
+  font-size: 0.6em;
+}
+
+tbody tr {
+  border-bottom: 1px solid var(--font-color-title-light);
+}
+td {
+  padding: 10px 0;
+}
+
+.see-all {
+  color: var(--brand-color-deepblue);
+  font-weight: 500;
+  text-decoration: underline;
+}
+.hide-on-mobile {
+  display: none;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -115,4 +278,7 @@ input {
 
 /*medium to large desktop*/
 @media screen and (min-width: 992px) {
+  .hide-on-mobile {
+    display: table-cell;
+  }
 }
