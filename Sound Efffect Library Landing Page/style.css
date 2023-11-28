@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,300;0,400;0,700;1,700&family=Playfair+Display:wght@700&family=Poppins:wght@200&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700&family=Playfair+Display:wght@700&family=Poppins:wght@200&family=Roboto:wght@300&display=swap");
 :root {
   --main-color: #cdd6f9;
   --brand-color-deepblue: #0432df;
@@ -13,6 +13,7 @@
 /*reset*/
 * {
   margin: 0;
+  box-sizing: border-box;
   font-family: "Jost", sans-serif;
 }
 li {
@@ -268,10 +269,195 @@ td {
   display: none;
 }
 
+/*categories*/
+.categories {
+  padding: 30px 16px 40px 16px;
+  width: 100%;
+}
+.category-lists {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-content: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.categories h1 {
+  margin-bottom: 20px;
+}
+.category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  border-radius: 15px;
+}
+.category h2 {
+  color: var(--font-color-title-light);
+  font-weight: 500;
+}
+.musical {
+  background: url(assets/images/musical.png);
+}
+.industrial {
+  background: url(assets/images/industrial.png);
+}
+.movie-sounds {
+  background: url(assets/images/Movie-sound.png);
+}
+.animal {
+  background: url(assets/images/animal.png);
+}
+.people {
+  background: url(assets/images/people.png);
+}
+.vehicles {
+  background: url(assets/images/Vehicles.png);
+}
+.sound-design {
+  background: url(assets/images/Sound-designs.png);
+}
+.emergency {
+  background: url(assets/images/Emergency.png);
+}
+.bell {
+  background: url(assets/images/Bell.png);
+}
+.nature {
+  background: url(assets/images/Nature.png);
+}
+.cartoon {
+  background: url(assets/images/Cartoon.png);
+}
+.horror {
+  background: url(assets/images/Horror.png);
+}
+
+.musical,
+.industrial,
+.movie-sounds,
+.animal,
+.people,
+.vehicles,
+.sound-design,
+.emergency,
+.bell,
+.nature,
+.cartoon,
+.horror {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*why us section*/
+.why-us-section {
+  padding: 50px 16px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 47px;
+}
+.why-us {
+  text-align: center;
+}
+.why-us p {
+  color: var(--brand-color-braveyellow);
+  font-weight: 600;
+}
+.benefits {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0 20px;
+  gap: 50px;
+}
+
+/* pricing section */
+
+.pricing-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 16px;
+  background: var(--brand-color-deepblue);
+  color: var(--font-color-title-light);
+}
+.pricing-section h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.pricing-section > h4 {
+  font-weight: 400;
+}
+.plans {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin: 20px 0;
+}
+.basic-plan,
+.premium-plan {
+  padding: 40px;
+}
+.basic-plan {
+  border: 1px solid var(--font-color-title-light);
+  border-radius: 12px;
+}
+.basic-plan h2 {
+  margin-bottom: 20px;
+}
+.basic-plan h4 {
+  text-align: start;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+.basic-plan h3 {
+  margin-bottom: 20px;
+}
+.basic-plan-btn {
+  background: transparent;
+  border: 3px solid var(--font-color-title-light);
+  border-radius: 12px;
+  color: var(--base-color-pure-white);
+  font-weight: 600;
+  font-size: 0.9em;
+  width: 120px;
+  height: 44px;
+}
+
+.premium-plan {
+  background: #1b4bff;
+  border-radius: 12px;
+}
+.premium-plan h2 {
+  margin-bottom: 20px;
+}
+.premium-plan h4 {
+  text-align: start;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+.premium-plan h3 {
+  margin-bottom: 20px;
+}
+.premium-plan-btn {
+  border: none;
+  background: var(--font-color-title-light);
+  border-radius: 12px;
+  color: var(--brand-color-deepblue);
+  font-size: 0.9em;
+  font-weight: 600;
+  width: 120px;
+  height: 44px;
+}
+
+/* testimonials */
+
 .grid {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
 }
+
 /*tablets and small desktop*/
 @media screen and (min-width: 768px) {
 }
