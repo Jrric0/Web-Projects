@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wave Sound Effects</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/swipper.css" />
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    <nav class="site-nav grid">
-      <img src="assets/images/logo-nav-.png" alt="" />
-      <ul>
+    <nav class="site-nav">
+      <div class="logo"><img src="assets/images/logo-nav-.png" alt="" /></div>
+      <ul id="primary-nav" class="nav-links" data-visible="false">
         <li><a href="" class="active">Home</a></li>
         <li><a href="">Best for Youtube</a></li>
         <li><a href="">Category</a></li>
@@ -17,9 +18,11 @@
         <li><a href="">FAQ</a></li>
         <li><button class="login">Login</button></li>
       </ul>
-      <button class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
+      <button
+        class="hamburger"
+        aria-controls="primary-nav"
+        aria-expanded="false"
+      >
         <div class="line"></div>
       </button>
     </nav>
@@ -339,11 +342,11 @@
       </div>
       <h4>Join premium with 434,849 creators.</h4>
     </section>
-    <section class="testimonials-section">
+    <section class="testimonials-section swiper">
       <p>TESTIMONIALS</p>
       <h2>Hear good experiences from our customers</h2>
-      <div class="grid testimonials">
-        <div class="testimonial">
+      <div class="testimonials swiper-wrapper">
+        <div class="testimonial swiper-slide">
           <img src="assets/icons/ri_double-quotes-r.png" alt="" />
           <p>
             The sounds from WavesCo is great and it really helps our team to
@@ -353,7 +356,7 @@
           <h4>Anne Joyce</h4>
           <h5>Video editor at Dude Perfect</h5>
         </div>
-        <div class="testimonial">
+        <div class="testimonial swiper-slide">
           <img src="assets/icons/ri_double-quotes-r.png" alt="" />
           <p>
             WavesCo was a great choice for our team for film production, the
@@ -363,7 +366,7 @@
           <h4>Edward Sann</h4>
           <h5>Head of Video editor at Netflix</h5>
         </div>
-        <div class="testimonial">
+        <div class="testimonial swiper-slide">
           <img src="assets/icons/ri_double-quotes-r.png" alt="" />
           <p>
             Perfect way to get best quality sound effects for youtube videos.
@@ -373,45 +376,54 @@
           <h4>Ronn D.</h4>
           <h5>Video Editor at PewDiePie</h5>
         </div>
+        <div class="testimonial swiper-slide">
+          <img src="assets/icons/ri_double-quotes-r.png" alt="" />
+          <p>
+            The sounds from WavesCo is great and it really helps our team to
+            save time and production costs.
+          </p>
+          <img src="assets/images/testimonial-1.png" alt="" />
+          <h4>Anne Joyce</h4>
+          <h5>Video editor at Dude Perfect</h5>
+        </div>
       </div>
+      <div class="swiper-pagination"></div>
     </section>
-    <footer class="grid">
+    <footer class="">
       <div class="footer-descs">
-        <img src="assets/images/logo-nav-.png" alt="" />
-        <p>
-          WavesCo is a platform for providing premium sound effects for Youtube
-          videos, movies and many more.
-        </p>
-        <p>WavesCo ©2021, All rights reserved</p>
+        <div class="footer-descs-container">
+          <img src="assets/images/logo-nav-.png" alt="" />
+
+          <p>
+            WavesCo is a platform for providing premium sound effects for
+            Youtube videos, movies and many more.
+          </p>
+          <p>WavesCo ©2021, All rights reserved</p>
+        </div>
       </div>
       <div class="product">
         <h3>Product</h3>
-        <ul>
-          <li><a href="">Browse sounds</a></li>
-          <li><a href="">Pricing</a></li>
-          <li><a href="">FAQ</a></li>
-          <li><a href="">Affiliate</a></li>
-        </ul>
+        <a href="">Browse sounds</a>
+        <a href="">Pricing</a>
+        <a href="">FAQ</a>
+        <a href="">Affiliate</a>
       </div>
       <div class="company">
         <h3>Company</h3>
-        <ul>
-          <li><a href="">Blog</a></li>
-          <li><a href="">About us</a></li>
-          <li><a href="">Help</a></li>
-          <li><a href="">Career</a></li>
-        </ul>
+        <a href="">Blog</a>
+        <a href="">About us</a>
+        <a href="">Help</a>
+        <a href="">Career</a>
       </div>
       <div class="socialmedia">
         <h3>Social Media</h3>
-        <ul>
-          <li><a href="">Twitter</a></li>
-          <li><a href="">Instagram</a></li>
-          <li><a href="">Youtube</a></li>
-          <li><a href="">Facebook</a></li>
-        </ul>
+        <a href="">Twitter</a>
+        <a href="">Instagram</a>
+        <a href="">Youtube</a>
+        <a href="">Facebook</a>
       </div>
     </footer>
-    <script src="app.js" defer></script>
+    <script src="/js/swipper.js"></script>
+    <script src="/js/app.js" defer></script>
   </body>
 </html>
