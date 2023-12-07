@@ -332,8 +332,7 @@ table {
   padding: 0;
   align-items: center;
 }
-.sound-list ul li {
-}
+
 .sound-list ul li:nth-child(1) a {
   border-bottom: 3px solid var(--font-color-desc-dark);
   color: var(--font-color-title-dark);
