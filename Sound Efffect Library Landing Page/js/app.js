@@ -89,6 +89,7 @@ function createButton(obj, pageSimulator) {
   backToTopButton.style.boxShadow = obj.shadowSize;
   backToTopButton.style.color = obj.selectedBackgroundColor;
   backToTopButton.style.backgroundColor = obj.selectedBackgroundColor;
+ 
   pageSimulator
     ? (backToTopButton.style.position = "absolute")
     : (backToTopButton.style.position = "fixed");
